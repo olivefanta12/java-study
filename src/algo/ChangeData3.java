@@ -4,19 +4,24 @@ public class ChangeData3 {
     public static void main(String[] args) {
         int[] arr = {4, 2, 3, 1};
         int temp;
-        int a = 0;
-        int b = arr[0];
-        int c = arr[1];
-        int ab = arr.length;
+//        int a = 0;
+//        int b = arr[0];
+//        int c = arr[1];
+//        int ab = arr.length;
 
-
-        for (int i = a; a < 4; a++) {
-            if (arr[a] > arr[a + 1]) {
-                temp = arr[a];
-                arr[a] = arr[a + 1];
-                arr[a + 1] = temp;
-                a++;
+        for (int j = 1; j <arr.length; j++) {
+            for (int i = 1; i < arr.length; i++) {
+                if (arr[i - 1] > arr[i]) {
+                    temp = arr[i];
+                    arr[i] = arr[i - 1];
+                    arr[i - 1] = temp;
+                }
             }
+        }
+
+        for (int k = 0; k < arr.length; k++) {
+            System.out.print(arr [k] + " ");
+        }
 
 
             //1회전
@@ -55,9 +60,5 @@ public class ChangeData3 {
 //            arr[1] = arr[0];
 //            arr[0] = temp;
 //        }
-            for (int k = 0; k < arr.length; k++) {
-                System.out.print(arr[k] + " ");
             }
         }
-    }
-}
