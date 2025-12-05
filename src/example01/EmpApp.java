@@ -25,7 +25,7 @@ public class EmpApp {
         Employee e3 = new Employee("C", "0103333", "인사팀", 1002, 100, "1002", "사원");
         Employee e4 = new Employee("D", "0104444");
         Employee e5 = new Employee("E", "0105555", "개발팀");
-        Employee e6 = new Employee("F", "0106666", "인사팀", 1003, 100, "2002", "대리");
+        Employee e6 = new Employee("F", "0106666", "인사팀", 1002, 100, "2002", "대리");
         Employee e7 = new Employee("G", "0107777");
         Employee e8 = new Employee("H", "0108888", "홍보팀");
         Employee e9 = new Employee("I", "0109999", "마게팅", 5, 100, "3002", "과장");
@@ -71,10 +71,11 @@ public class EmpApp {
         // 7. 특정 사원 승진 시키기 --------------------------
         System.out.println();
         System.out.println("== 김철수 대리 승진 처리 ==");
+        searchNameAndPromote("C");
         System.out.println(e3.getPosition());
 
-        searchNameAndPromote("B"); // 사원번호 1002 승진
-        System.out.println(e3.getPosition());
+        searchNameAndPromote("F"); // 사원번호 1002 승진
+        System.out.println(e6.getPosition());
 
 
     }

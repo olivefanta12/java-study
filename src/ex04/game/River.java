@@ -1,9 +1,9 @@
 package ex04.game;
 
-public class Zealot extends Protoss {
-    int hp = 100;
-    int shield = 80;
-    int attack = 20;
+public class River extends Protoss {
+    int hp = 110;
+    int shield = 200;
+    int attack = 50;
 
     public int getHp() {
         return hp;
@@ -13,14 +13,6 @@ public class Zealot extends Protoss {
         this.hp = hp;
     }
 
-    public int getShield() {
-        return shield;
-    }
-
-    public void setShield(int shield) {
-        this.shield = shield;
-    }
-
     public int getAttack() {
         return attack;
     }
@@ -28,4 +20,13 @@ public class Zealot extends Protoss {
     public void setAttack(int attack) {
         this.attack = attack;
     }
+
+    public int getShield() {
+        return shield;
+    }
+
+    public void setShield(int shield) {
+        this.shield = shield;
+    }
 }
+
