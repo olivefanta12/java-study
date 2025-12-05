@@ -1,31 +1,8 @@
 package ex04.game;
 
 public class Zealot extends Protoss {
-    int hp = 100;
-    int shield = 80;
-    int attack = 20;
+    public Zealot (String name, int hp, int shield, int attack){
+        super("Zealot", 80, 100, 10);
 
-    public int getHp() {
-        return hp;
-    }
-
-    public void setHp(int hp) {
-        this.hp = hp;
-    }
-
-    public int getShield() {
-        return shield;
-    }
-
-    public void setShield(int shield) {
-        this.shield = shield;
-    }
-
-    public int getAttack() {
-        return attack;
-    }
-
-    public void setAttack(int attack) {
-        this.attack = attack;
     }
 }
